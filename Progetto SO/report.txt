@@ -1,0 +1,837 @@
+###############################################
+PROGETTO DI SIMULAZIONI DI UN TRAFFICO DI NAVII
+###############################################
+
+
+
+#######################
+INIZIO SIMULAZIONE
+#######################
+
+--------------------
+MERCI
+--------------------
+MERCE 1 durata:11 
+MERCE 2 durata:21 
+MERCE 3 durata:11 
+MERCE 4 durata:30 
+MERCE 5 durata:19 
+--------------------
+PORTI
+--------------------
+Velocità di caricamento/scaricamento: 5 
+Dimensione lotti: 1 
+
+1)PORTO (pid:1493) coord:(0.000000,0.000000) num_b:2 domanda(t:2  q:10  d:21) offerta(t:1  q:10  d:11)
+2)PORTO (pid:1494) coord:(100.000000,100.000000) num_b:1 domanda(t:5  q:10  d:19) offerta(t:1  q:10  d:11)
+3)PORTO (pid:1495) coord:(0.000000,100.000000) num_b:2 domanda(t:2  q:10  d:21) offerta(t:5  q:10  d:19)
+4)PORTO (pid:1496) coord:(100.000000,0.000000) num_b:1 domanda(t:5  q:10  d:19) offerta(t:2  q:10  d:21)
+5)PORTO (pid:1497) coord:(9.000000,58.000000) num_b:2 domanda(t:4  q:10  d:30) offerta(t:2  q:10  d:21)
+6)PORTO (pid:1498) coord:(55.000000,51.000000) num_b:2 domanda(t:2  q:10  d:21) offerta(t:1  q:10  d:11)
+7)PORTO (pid:1499) coord:(4.000000,85.000000) num_b:1 domanda(t:1  q:10  d:11) offerta(t:3  q:10  d:11)
+8)PORTO (pid:1500) coord:(35.000000,58.000000) num_b:2 domanda(t:4  q:10  d:30) offerta(t:2  q:10  d:21)
+9)PORTO (pid:1501) coord:(76.000000,74.000000) num_b:1 domanda(t:5  q:10  d:19) offerta(t:3  q:10  d:11)
+10)PORTO (pid:1502) coord:(81.000000,89.000000) num_b:2 domanda(t:5  q:10  d:19) offerta(t:2  q:10  d:21)
+
+--------------------
+NAVI
+--------------------
+1)NAVE (pid:1503) coord:(74.000000,93.000000) merce(t:0  q:0  d:0) stato:0
+2)NAVE (pid:1504) coord:(6.000000,64.000000) merce(t:0  q:0  d:0) stato:0
+3)NAVE (pid:1505) coord:(85.000000,50.000000) merce(t:0  q:0  d:0) stato:0
+4)NAVE (pid:1506) coord:(17.000000,4.000000) merce(t:0  q:0  d:0) stato:0
+5)NAVE (pid:1507) coord:(11.000000,23.000000) merce(t:0  q:0  d:0) stato:0
+6)NAVE (pid:1508) coord:(23.000000,16.000000) merce(t:0  q:0  d:0) stato:0
+7)NAVE (pid:1509) coord:(47.000000,2.000000) merce(t:0  q:0  d:0) stato:0
+8)NAVE (pid:1510) coord:(92.000000,48.000000) merce(t:0  q:0  d:0) stato:0
+9)NAVE (pid:1511) coord:(76.000000,40.000000) merce(t:0  q:0  d:0) stato:0
+10)NAVE (pid:1512) coord:(32.000000,36.000000) merce(t:0  q:0  d:0) stato:0
+
+
+*****************************
+REPORT GIORNALIERO
+*****************************
+
+#######################
+REPORT giorno 0
+#######################
+ -Merce (1): Contenuta dai porti: 30  Richiesta dai porti:10 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (2): Contenuta dai porti: 40  Richiesta dai porti:30 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (3): Contenuta dai porti: 20  Richiesta dai porti:0 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (4): Contenuta dai porti: 0  Richiesta dai porti:20 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (5): Contenuta dai porti: 10  Richiesta dai porti:40 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+
+ -Numero di navi in mare con carico:0
+ -Numero di navi in mare senza carico:10
+ -Numero di navi in porto:0 
+
+
+ -Porto (1) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (2) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (3) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (4) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (5) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (6) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (7) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (8) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (9) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (10) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+#####################
+
+
+#######################
+REPORT giorno 1
+#######################
+ -Merce (1): Contenuta dai porti: 30  Richiesta dai porti:10 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (2): Contenuta dai porti: 40  Richiesta dai porti:30 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (3): Contenuta dai porti: 20  Richiesta dai porti:0 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (4): Contenuta dai porti: 0  Richiesta dai porti:20 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (5): Contenuta dai porti: 10  Richiesta dai porti:40 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+
+ -Numero di navi in mare con carico:0
+ -Numero di navi in mare senza carico:10
+ -Numero di navi in porto:0 
+
+
+ -Porto (1) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (2) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (3) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (4) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (5) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (6) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (7) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (8) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (9) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (10) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+#####################
+
+
+#######################
+REPORT giorno 2
+#######################
+ -Merce (1): Contenuta dai porti: 30  Richiesta dai porti:10 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (2): Contenuta dai porti: 40  Richiesta dai porti:30 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (3): Contenuta dai porti: 20  Richiesta dai porti:0 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (4): Contenuta dai porti: 0  Richiesta dai porti:20 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (5): Contenuta dai porti: 10  Richiesta dai porti:40 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+
+ -Numero di navi in mare con carico:0
+ -Numero di navi in mare senza carico:8
+ -Numero di navi in porto:2 
+
+
+ -Porto (1) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (2) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (3) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (4) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (5) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(1/2)
+ -Porto (6) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (7) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (8) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (9) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (10) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(1/2)
+#####################
+
+
+#######################
+REPORT giorno 3
+#######################
+ -Merce (1): Contenuta dai porti: 30  Richiesta dai porti:10 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (2): Contenuta dai porti: 30  Richiesta dai porti:30 
+              Contenuta in nave: 10  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (3): Contenuta dai porti: 20  Richiesta dai porti:0 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (4): Contenuta dai porti: 0  Richiesta dai porti:20 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (5): Contenuta dai porti: 10  Richiesta dai porti:40 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+
+ -Numero di navi in mare con carico:2
+ -Numero di navi in mare senza carico:8
+ -Numero di navi in porto:0 
+
+
+ -Porto (1) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (2) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (3) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (4) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (5) Merce:(presente:5 spedita:5 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (6) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (7) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (8) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (9) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (10) Merce:(presente:5 spedita:5 ricevuta:0) Num_banchine_occupate(0/2)
+#####################
+
+
+#######################
+REPORT giorno 4
+#######################
+ -Merce (1): Contenuta dai porti: 30  Richiesta dai porti:10 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (2): Contenuta dai porti: 30  Richiesta dai porti:30 
+              Contenuta in nave: 10  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (3): Contenuta dai porti: 20  Richiesta dai porti:0 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (4): Contenuta dai porti: 0  Richiesta dai porti:20 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (5): Contenuta dai porti: 10  Richiesta dai porti:40 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+
+ -Numero di navi in mare con carico:2
+ -Numero di navi in mare senza carico:7
+ -Numero di navi in porto:1 
+
+
+ -Porto (1) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(1/2)
+ -Porto (2) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (3) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (4) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (5) Merce:(presente:5 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (6) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (7) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (8) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (9) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (10) Merce:(presente:5 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+#####################
+
+
+#######################
+REPORT giorno 5
+#######################
+ -Merce (1): Contenuta dai porti: 25  Richiesta dai porti:10 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:5 
+ -Merce (2): Contenuta dai porti: 30  Richiesta dai porti:30 
+              Contenuta in nave: 10  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (3): Contenuta dai porti: 20  Richiesta dai porti:0 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (4): Contenuta dai porti: 0  Richiesta dai porti:20 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (5): Contenuta dai porti: 10  Richiesta dai porti:40 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+
+ -Numero di navi in mare con carico:2
+ -Numero di navi in mare senza carico:6
+ -Numero di navi in porto:2 
+
+
+ -Porto (1) Merce:(presente:5 spedita:5 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (2) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (3) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (4) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (5) Merce:(presente:5 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (6) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(1/2)
+ -Porto (7) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (8) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(1/2)
+ -Porto (9) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (10) Merce:(presente:5 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+#####################
+
+
+#######################
+REPORT giorno 6
+#######################
+ -Merce (1): Contenuta dai porti: 20  Richiesta dai porti:10 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:5 
+ -Merce (2): Contenuta dai porti: 25  Richiesta dai porti:30 
+              Contenuta in nave: 15  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (3): Contenuta dai porti: 20  Richiesta dai porti:0 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (4): Contenuta dai porti: 0  Richiesta dai porti:20 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (5): Contenuta dai porti: 10  Richiesta dai porti:40 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+
+ -Numero di navi in mare con carico:3
+ -Numero di navi in mare senza carico:4
+ -Numero di navi in porto:3 
+
+
+ -Porto (1) Merce:(presente:5 spedita:0 ricevuta:0) Num_banchine_occupate(2/2)
+ -Porto (2) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (3) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (4) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (5) Merce:(presente:5 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (6) Merce:(presente:5 spedita:5 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (7) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (8) Merce:(presente:5 spedita:5 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (9) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(1/1)
+ -Porto (10) Merce:(presente:5 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+#####################
+
+
+#######################
+REPORT giorno 7
+#######################
+ -Merce (1): Contenuta dai porti: 15  Richiesta dai porti:10 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:5 
+ -Merce (2): Contenuta dai porti: 25  Richiesta dai porti:30 
+              Contenuta in nave: 15  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (3): Contenuta dai porti: 15  Richiesta dai porti:0 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:5 
+ -Merce (4): Contenuta dai porti: 0  Richiesta dai porti:20 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (5): Contenuta dai porti: 10  Richiesta dai porti:40 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+
+ -Numero di navi in mare con carico:3
+ -Numero di navi in mare senza carico:5
+ -Numero di navi in porto:2 
+
+
+ -Porto (1) Merce:(presente:0 spedita:5 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (2) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (3) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (4) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (5) Merce:(presente:5 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (6) Merce:(presente:5 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (7) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (8) Merce:(presente:5 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (9) Merce:(presente:5 spedita:5 ricevuta:0) Num_banchine_occupate(1/1)
+ -Porto (10) Merce:(presente:5 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+#####################
+
+
+#######################
+REPORT giorno 8
+#######################
+ -Merce (1): Contenuta dai porti: 15  Richiesta dai porti:10 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (2): Contenuta dai porti: 25  Richiesta dai porti:30 
+              Contenuta in nave: 15  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (3): Contenuta dai porti: 10  Richiesta dai porti:0 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:5 
+ -Merce (4): Contenuta dai porti: 0  Richiesta dai porti:20 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (5): Contenuta dai porti: 10  Richiesta dai porti:40 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+
+ -Numero di navi in mare con carico:3
+ -Numero di navi in mare senza carico:7
+ -Numero di navi in porto:0 
+
+
+ -Porto (1) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (2) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (3) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (4) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (5) Merce:(presente:5 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (6) Merce:(presente:5 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (7) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (8) Merce:(presente:5 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (9) Merce:(presente:0 spedita:5 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (10) Merce:(presente:5 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+#####################
+
+
+#######################
+REPORT giorno 9
+#######################
+ -Merce (1): Contenuta dai porti: 15  Richiesta dai porti:10 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (2): Contenuta dai porti: 25  Richiesta dai porti:30 
+              Contenuta in nave: 15  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (3): Contenuta dai porti: 10  Richiesta dai porti:0 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (4): Contenuta dai porti: 0  Richiesta dai porti:20 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (5): Contenuta dai porti: 10  Richiesta dai porti:40 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+
+ -Numero di navi in mare con carico:3
+ -Numero di navi in mare senza carico:7
+ -Numero di navi in porto:0 
+
+
+ -Porto (1) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (2) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (3) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (4) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (5) Merce:(presente:5 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (6) Merce:(presente:5 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (7) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (8) Merce:(presente:5 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (9) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (10) Merce:(presente:5 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+#####################
+
+
+#######################
+REPORT giorno 10
+#######################
+ -Merce (1): Contenuta dai porti: 15  Richiesta dai porti:10 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (2): Contenuta dai porti: 25  Richiesta dai porti:30 
+              Contenuta in nave: 15  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (3): Contenuta dai porti: 10  Richiesta dai porti:0 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (4): Contenuta dai porti: 0  Richiesta dai porti:20 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (5): Contenuta dai porti: 10  Richiesta dai porti:40 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+
+ -Numero di navi in mare con carico:2
+ -Numero di navi in mare senza carico:7
+ -Numero di navi in porto:1 
+
+
+ -Porto (1) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (2) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (3) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (4) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (5) Merce:(presente:5 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (6) Merce:(presente:5 spedita:0 ricevuta:0) Num_banchine_occupate(1/2)
+ -Porto (7) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (8) Merce:(presente:5 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (9) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (10) Merce:(presente:5 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+#####################
+
+
+#######################
+REPORT giorno 11
+#######################
+ -Merce (1): Contenuta dai porti: 15  Richiesta dai porti:10 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (2): Contenuta dai porti: 25  Richiesta dai porti:25 
+              Contenuta in nave: 10  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (3): Contenuta dai porti: 10  Richiesta dai porti:0 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (4): Contenuta dai porti: 0  Richiesta dai porti:20 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (5): Contenuta dai porti: 10  Richiesta dai porti:40 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+
+ -Numero di navi in mare con carico:1
+ -Numero di navi in mare senza carico:5
+ -Numero di navi in porto:4 
+
+
+ -Porto (1) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (2) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (3) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(1/2)
+ -Porto (4) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (5) Merce:(presente:5 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (6) Merce:(presente:5 spedita:0 ricevuta:5) Num_banchine_occupate(1/2)
+ -Porto (7) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (8) Merce:(presente:5 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (9) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (10) Merce:(presente:5 spedita:0 ricevuta:0) Num_banchine_occupate(2/2)
+#####################
+
+
+#######################
+REPORT giorno 12
+#######################
+ -Merce (1): Contenuta dai porti: 0  Richiesta dai porti:0 
+              Contenuta in nave: 0  Scaduta in porto:15  Scaduta in nave:0 
+ -Merce (2): Contenuta dai porti: 20  Richiesta dai porti:20 
+              Contenuta in nave: 10  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (3): Contenuta dai porti: 0  Richiesta dai porti:0 
+              Contenuta in nave: 0  Scaduta in porto:10  Scaduta in nave:0 
+ -Merce (4): Contenuta dai porti: 0  Richiesta dai porti:20 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (5): Contenuta dai porti: 10  Richiesta dai porti:40 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+
+ -Numero di navi in mare con carico:1
+ -Numero di navi in mare senza carico:7
+ -Numero di navi in porto:2 
+
+
+ -Porto (1) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (2) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (3) Merce:(presente:10 spedita:0 ricevuta:5) Num_banchine_occupate(1/2)
+ -Porto (4) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (5) Merce:(presente:5 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (6) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(1/2)
+ -Porto (7) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (8) Merce:(presente:5 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (9) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (10) Merce:(presente:0 spedita:5 ricevuta:0) Num_banchine_occupate(0/2)
+#####################
+
+
+#######################
+REPORT giorno 13
+#######################
+ -Merce (1): Contenuta dai porti: 0  Richiesta dai porti:0 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (2): Contenuta dai porti: 20  Richiesta dai porti:15 
+              Contenuta in nave: 5  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (3): Contenuta dai porti: 0  Richiesta dai porti:0 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (4): Contenuta dai porti: 0  Richiesta dai porti:20 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (5): Contenuta dai porti: 5  Richiesta dai porti:40 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:5 
+
+ -Numero di navi in mare con carico:1
+ -Numero di navi in mare senza carico:9
+ -Numero di navi in porto:0 
+
+
+ -Porto (1) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (2) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (3) Merce:(presente:5 spedita:5 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (4) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (5) Merce:(presente:5 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (6) Merce:(presente:0 spedita:0 ricevuta:5) Num_banchine_occupate(0/2)
+ -Porto (7) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (8) Merce:(presente:5 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (9) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (10) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+#####################
+
+
+#######################
+REPORT giorno 14
+#######################
+ -Merce (1): Contenuta dai porti: 0  Richiesta dai porti:0 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (2): Contenuta dai porti: 20  Richiesta dai porti:15 
+              Contenuta in nave: 5  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (3): Contenuta dai porti: 0  Richiesta dai porti:0 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (4): Contenuta dai porti: 0  Richiesta dai porti:20 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (5): Contenuta dai porti: 5  Richiesta dai porti:40 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+
+ -Numero di navi in mare con carico:1
+ -Numero di navi in mare senza carico:9
+ -Numero di navi in porto:0 
+
+
+ -Porto (1) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (2) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (3) Merce:(presente:5 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (4) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (5) Merce:(presente:5 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (6) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (7) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (8) Merce:(presente:5 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (9) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (10) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+#####################
+
+
+#######################
+REPORT giorno 15
+#######################
+ -Merce (1): Contenuta dai porti: 0  Richiesta dai porti:0 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (2): Contenuta dai porti: 20  Richiesta dai porti:15 
+              Contenuta in nave: 5  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (3): Contenuta dai porti: 0  Richiesta dai porti:0 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (4): Contenuta dai porti: 0  Richiesta dai porti:20 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (5): Contenuta dai porti: 5  Richiesta dai porti:40 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+
+ -Numero di navi in mare con carico:1
+ -Numero di navi in mare senza carico:9
+ -Numero di navi in porto:0 
+
+
+ -Porto (1) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (2) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (3) Merce:(presente:5 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (4) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (5) Merce:(presente:5 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (6) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (7) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (8) Merce:(presente:5 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (9) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (10) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+#####################
+
+
+#######################
+REPORT giorno 16
+#######################
+ -Merce (1): Contenuta dai porti: 0  Richiesta dai porti:0 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (2): Contenuta dai porti: 20  Richiesta dai porti:15 
+              Contenuta in nave: 5  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (3): Contenuta dai porti: 0  Richiesta dai porti:0 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (4): Contenuta dai porti: 0  Richiesta dai porti:20 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (5): Contenuta dai porti: 5  Richiesta dai porti:40 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+
+ -Numero di navi in mare con carico:1
+ -Numero di navi in mare senza carico:8
+ -Numero di navi in porto:1 
+
+
+ -Porto (1) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (2) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (3) Merce:(presente:5 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (4) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (5) Merce:(presente:5 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (6) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (7) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (8) Merce:(presente:5 spedita:0 ricevuta:0) Num_banchine_occupate(1/2)
+ -Porto (9) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (10) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+#####################
+
+
+#######################
+REPORT giorno 17
+#######################
+ -Merce (1): Contenuta dai porti: 0  Richiesta dai porti:0 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (2): Contenuta dai porti: 15  Richiesta dai porti:15 
+              Contenuta in nave: 5  Scaduta in porto:0  Scaduta in nave:5 
+ -Merce (3): Contenuta dai porti: 0  Richiesta dai porti:0 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (4): Contenuta dai porti: 0  Richiesta dai porti:20 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (5): Contenuta dai porti: 5  Richiesta dai porti:40 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+
+ -Numero di navi in mare con carico:1
+ -Numero di navi in mare senza carico:9
+ -Numero di navi in porto:0 
+
+
+ -Porto (1) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (2) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (3) Merce:(presente:5 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (4) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (5) Merce:(presente:5 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (6) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (7) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (8) Merce:(presente:0 spedita:5 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (9) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (10) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+#####################
+
+
+#######################
+REPORT giorno 18
+#######################
+ -Merce (1): Contenuta dai porti: 0  Richiesta dai porti:0 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (2): Contenuta dai porti: 15  Richiesta dai porti:15 
+              Contenuta in nave: 5  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (3): Contenuta dai porti: 0  Richiesta dai porti:0 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (4): Contenuta dai porti: 0  Richiesta dai porti:20 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (5): Contenuta dai porti: 5  Richiesta dai porti:40 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+
+ -Numero di navi in mare con carico:1
+ -Numero di navi in mare senza carico:9
+ -Numero di navi in porto:0 
+
+
+ -Porto (1) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (2) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (3) Merce:(presente:5 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (4) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (5) Merce:(presente:5 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (6) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (7) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (8) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (9) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (10) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+#####################
+
+
+#######################
+REPORT giorno 19
+#######################
+ -Merce (1): Contenuta dai porti: 0  Richiesta dai porti:0 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (2): Contenuta dai porti: 15  Richiesta dai porti:15 
+              Contenuta in nave: 5  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (3): Contenuta dai porti: 0  Richiesta dai porti:0 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (4): Contenuta dai porti: 0  Richiesta dai porti:20 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (5): Contenuta dai porti: 5  Richiesta dai porti:40 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+
+ -Numero di navi in mare con carico:1
+ -Numero di navi in mare senza carico:8
+ -Numero di navi in porto:1 
+
+
+ -Porto (1) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (2) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (3) Merce:(presente:5 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (4) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (5) Merce:(presente:5 spedita:0 ricevuta:0) Num_banchine_occupate(1/2)
+ -Porto (6) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (7) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (8) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (9) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (10) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+#####################
+
+
+#######################
+REPORT giorno 20
+#######################
+ -Merce (1): Contenuta dai porti: 0  Richiesta dai porti:0 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (2): Contenuta dai porti: 10  Richiesta dai porti:15 
+              Contenuta in nave: 5  Scaduta in porto:0  Scaduta in nave:5 
+ -Merce (3): Contenuta dai porti: 0  Richiesta dai porti:0 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (4): Contenuta dai porti: 0  Richiesta dai porti:20 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (5): Contenuta dai porti: 0  Richiesta dai porti:0 
+              Contenuta in nave: 0  Scaduta in porto:5  Scaduta in nave:0 
+
+ -Numero di navi in mare con carico:1
+ -Numero di navi in mare senza carico:9
+ -Numero di navi in porto:0 
+
+
+ -Porto (1) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (2) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (3) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (4) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (5) Merce:(presente:0 spedita:5 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (6) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (7) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (8) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (9) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (10) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+#####################
+
+
+#######################
+REPORT giorno 21
+#######################
+ -Merce (1): Contenuta dai porti: 0  Richiesta dai porti:0 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (2): Contenuta dai porti: 10  Richiesta dai porti:15 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:5 
+ -Merce (3): Contenuta dai porti: 0  Richiesta dai porti:0 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (4): Contenuta dai porti: 0  Richiesta dai porti:20 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (5): Contenuta dai porti: 0  Richiesta dai porti:0 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+
+ -Numero di navi in mare con carico:0
+ -Numero di navi in mare senza carico:10
+ -Numero di navi in porto:0 
+
+
+ -Porto (1) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (2) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (3) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (4) Merce:(presente:10 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (5) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (6) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (7) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (8) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (9) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (10) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+#####################
+
+
+#######################
+REPORT giorno 22
+#######################
+ -Merce (1): Contenuta dai porti: 0  Richiesta dai porti:0 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (2): Contenuta dai porti: 0  Richiesta dai porti:0 
+              Contenuta in nave: 0  Scaduta in porto:10  Scaduta in nave:0 
+ -Merce (3): Contenuta dai porti: 0  Richiesta dai porti:0 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (4): Contenuta dai porti: 0  Richiesta dai porti:20 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+ -Merce (5): Contenuta dai porti: 0  Richiesta dai porti:0 
+              Contenuta in nave: 0  Scaduta in porto:0  Scaduta in nave:0 
+
+ -Numero di navi in mare con carico:0
+ -Numero di navi in mare senza carico:7
+ -Numero di navi in porto:3 
+
+
+ -Porto (1) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (2) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (3) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (4) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (5) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (6) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (7) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (8) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+ -Porto (9) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/1)
+ -Porto (10) Merce:(presente:0 spedita:0 ricevuta:0) Num_banchine_occupate(0/2)
+#####################
+
+
+#############################
+REPORT FINALE
+#############################
+
+ -NAVI: -ancora in mare con carico:0
+        -ancora in mare senza carico:7
+        -ancora in porto:3 
+
+ -MERCE (1): Contenuta nei porti: 0  Richiesta dai porti:0 Contenuta in nave: 0 
+ -MERCE (2): Contenuta nei porti: 0  Richiesta dai porti:0 Contenuta in nave: 0 
+ -MERCE (3): Contenuta nei porti: 0  Richiesta dai porti:0 Contenuta in nave: 0 
+ -MERCE (4): Contenuta nei porti: 0  Richiesta dai porti:20 Contenuta in nave: 0 
+ -MERCE (5): Contenuta nei porti: 0  Richiesta dai porti:0 Contenuta in nave: 0 
+
+ -Porto (1) Merce:(presente:0)  tot_spedita:10 tot_ricevuta:0) 
+ -Porto (2) Merce:(presente:0)  tot_spedita:0 tot_ricevuta:0) 
+ -Porto (3) Merce:(presente:0)  tot_spedita:5 tot_ricevuta:5) 
+ -Porto (4) Merce:(presente:0)  tot_spedita:0 tot_ricevuta:0) 
+ -Porto (5) Merce:(presente:0)  tot_spedita:10 tot_ricevuta:0) 
+ -Porto (6) Merce:(presente:0)  tot_spedita:5 tot_ricevuta:10) 
+ -Porto (7) Merce:(presente:0)  tot_spedita:0 tot_ricevuta:0) 
+ -Porto (8) Merce:(presente:0)  tot_spedita:10 tot_ricevuta:0) 
+ -Porto (9) Merce:(presente:0)  tot_spedita:10 tot_ricevuta:0) 
+ -Porto (10) Merce:(presente:0)  tot_spedita:10 tot_ricevuta:0) 
+
+ -MERCE (1): -Tot generata nei porti:30  Rimasta ferma in porto:0  
+ 		 -Scaduta in porto:15 Scaduta in nave:15 Consegnata: 0  
+ -MERCE (2): -Tot generata nei porti:40  Rimasta ferma in porto:0  
+ 		 -Scaduta in porto:10 Scaduta in nave:15 Consegnata: 15  
+ -MERCE (3): -Tot generata nei porti:20  Rimasta ferma in porto:0  
+ 		 -Scaduta in porto:10 Scaduta in nave:10 Consegnata: 0  
+ -MERCE (4): -Tot generata nei porti:0  Rimasta ferma in porto:0  
+ 		 -Scaduta in porto:0 Scaduta in nave:0 Consegnata: 0  
+ -MERCE (5): -Tot generata nei porti:10  Rimasta ferma in porto:0  
+ 		 -Scaduta in porto:5 Scaduta in nave:5 Consegnata: 0  
+
+Il Porto 1 ha richiesto la quantità maggiore di merce:10
+Il Porto 1 ha offerto la quantità maggiore di merce:10
+
+#############################
+Fine simulazione
+#############################
+
+
+
+======= OFFERTA MERCI TERMINATA ======  
+
